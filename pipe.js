@@ -39,8 +39,8 @@ class Pipe {
         if (!this.#loadedDown && !this.#loadedUp) {
             return;
         }
-        this.y1 = 350 - this.#interval;
-        // this.y1 = 280 - this.#interval;
+        //this.y1 = 350 - this.#interval;
+        this.y1 = 280 - this.#interval;
         this.y2 = -150 - this.#interval;
         this.game.context.drawImage(this.#imgUp, this.x, this.y1);
         this.game.context.drawImage(this.#imgDown, this.x, this.y2);
